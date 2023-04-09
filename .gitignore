@@ -7,3 +7,5 @@ Pods/
 
 ## Gem
 vendor/bundle
+
+.DS_Store

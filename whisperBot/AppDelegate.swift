@@ -10,21 +10,85 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    var eventMonitor: Any?
     
+    let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
+
+    let popover = NSPopover()
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        if let button = statusItem.button {
+          button.image = NSImage(named:NSImage.Name("StatusBarButtonImage"))
+            button.action = #selector(togglePopover(_:))
+        }
+        popover.contentViewController = WhisperBotViewController.freshController()
+        
+        let options = [kAXTrustedCheckOptionPrompt.takeRetainedValue(): true] as CFDictionary
+        let isTrusted = (options)
+        
+        print("isTrusted: \(isTrusted)")
+        eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: .keyDown, handler: { (event) in
+            
+        // ここでショートカットキーの検出を行う
+        // Command + Option + Mで起動
+            if event.modifierFlags.contains(.command) && event.modifierFlags.contains(.option) && event.keyCode == 0x2E {
+                self.showPopover(sender: nil)
+
+            }
+        })
+            
+      
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        if let monitor = eventMonitor {
+              NSEvent.removeMonitor(monitor)
+          }
     }
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
+    
+    @objc func togglePopover(_ sender: Any?) {
+      if popover.isShown {
+        closePopover(sender: sender)
+      } else {
+        showPopover(sender: sender)
+      }
+    }
 
+    func showPopover(sender: Any?) {
+      if let button = statusItem.button {
+        popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+      }
+    }
+
+    func closePopover(sender: Any?) {
+      popover.performClose(sender)
+    }
+    
+    
+    
+    func handleShortcut() {
+        print("inside handleShortcut")
+        let popover = WhisperBotPopover()
+           popover.show(relativeTo: NSRect(x: 0, y: 0, width: 300, height: 40), of: NSApp.mainWindow!.contentView!, preferredEdge: .minY)
+      }
+    
+    @objc func startChat(){
+        
+    }
+    
+    // MARK: - Menu Construction
+    func constructMenu() {
+      let menu = NSMenu()
+
+      menu.addItem(NSMenuItem(title: "Start Chat", action: #selector(togglePopover(_:)), keyEquivalent: "P"))
+
+      statusItem.menu = menu
+    }
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
