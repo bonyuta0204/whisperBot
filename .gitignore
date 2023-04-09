@@ -1,0 +1,9 @@
+# Xcode
+#
+xcuserdata/
+
+## Pods - for those using CocoaPods
+Pods/
+
+## Gem
+vendor/bundle

@@ -15,6 +15,9 @@
 		4E5D6D6D29E2E9E400AEAE2B /* whisperBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D6D6C29E2E9E400AEAE2B /* whisperBotTests.swift */; };
 		4E5D6D7729E2E9E400AEAE2B /* whisperBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D6D7629E2E9E400AEAE2B /* whisperBotUITests.swift */; };
 		4E5D6D7929E2E9E400AEAE2B /* whisperBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D6D7829E2E9E400AEAE2B /* whisperBotUITestsLaunchTests.swift */; };
+		52303DE4F29DB936AA06CB87 /* Pods_whisperBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01856B9409ACE987932CF390 /* Pods_whisperBotTests.framework */; };
+		9D97097474D691F292B1FFCB /* Pods_whisperBot_whisperBotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FA7E8F9661835B2462073B /* Pods_whisperBot_whisperBotUITests.framework */; };
+		BB3ECB48EF3CEE87EAADFE9E /* Pods_whisperBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0315A384FCEC1DF39A8F01A /* Pods_whisperBot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01856B9409ACE987932CF390 /* Pods_whisperBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whisperBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7C2CE61BC0346AFEA576E7 /* Pods-whisperBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBotTests.debug.xcconfig"; path = "Target Support Files/Pods-whisperBotTests/Pods-whisperBotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		339EACD290B9BA50AFF8AE73 /* Pods-whisperBot-whisperBotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBot-whisperBotUITests.debug.xcconfig"; path = "Target Support Files/Pods-whisperBot-whisperBotUITests/Pods-whisperBot-whisperBotUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E5D6D5429E2E9E100AEAE2B /* whisperBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whisperBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5D6D5729E2E9E100AEAE2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E5D6D5929E2E9E100AEAE2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		4E5D6D7229E2E9E400AEAE2B /* whisperBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whisperBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5D6D7629E2E9E400AEAE2B /* whisperBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whisperBotUITests.swift; sourceTree = "<group>"; };
 		4E5D6D7829E2E9E400AEAE2B /* whisperBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whisperBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61FA7E8F9661835B2462073B /* Pods_whisperBot_whisperBotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whisperBot_whisperBotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A5A11D14564E6D74C511C8 /* Pods-whisperBot-whisperBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBot-whisperBotUITests.release.xcconfig"; path = "Target Support Files/Pods-whisperBot-whisperBotUITests/Pods-whisperBot-whisperBotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		771EBE7597898210617065FF /* Pods-whisperBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBot.debug.xcconfig"; path = "Target Support Files/Pods-whisperBot/Pods-whisperBot.debug.xcconfig"; sourceTree = "<group>"; };
+		9746F003A429CF3BF3DC3628 /* Pods-whisperBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBot.release.xcconfig"; path = "Target Support Files/Pods-whisperBot/Pods-whisperBot.release.xcconfig"; sourceTree = "<group>"; };
+		C0315A384FCEC1DF39A8F01A /* Pods_whisperBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whisperBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34DC70C291AD3F123B90693 /* Pods-whisperBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBotTests.release.xcconfig"; path = "Target Support Files/Pods-whisperBotTests/Pods-whisperBotTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3ECB48EF3CEE87EAADFE9E /* Pods_whisperBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52303DE4F29DB936AA06CB87 /* Pods_whisperBotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D97097474D691F292B1FFCB /* Pods_whisperBot_whisperBotUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				4E5D6D6B29E2E9E400AEAE2B /* whisperBotTests */,
 				4E5D6D7529E2E9E400AEAE2B /* whisperBotUITests */,
 				4E5D6D5529E2E9E100AEAE2B /* Products */,
+				D0CD29EBF3A4134F380F57E2 /* Pods */,
+				D19B9AF31C9ED0B0B478EFFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +141,30 @@
 			path = whisperBotUITests;
 			sourceTree = "<group>";
 		};
+		D0CD29EBF3A4134F380F57E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				771EBE7597898210617065FF /* Pods-whisperBot.debug.xcconfig */,
+				9746F003A429CF3BF3DC3628 /* Pods-whisperBot.release.xcconfig */,
+				339EACD290B9BA50AFF8AE73 /* Pods-whisperBot-whisperBotUITests.debug.xcconfig */,
+				71A5A11D14564E6D74C511C8 /* Pods-whisperBot-whisperBotUITests.release.xcconfig */,
+				2D7C2CE61BC0346AFEA576E7 /* Pods-whisperBotTests.debug.xcconfig */,
+				D34DC70C291AD3F123B90693 /* Pods-whisperBotTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D19B9AF31C9ED0B0B478EFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0315A384FCEC1DF39A8F01A /* Pods_whisperBot.framework */,
+				61FA7E8F9661835B2462073B /* Pods_whisperBot_whisperBotUITests.framework */,
+				01856B9409ACE987932CF390 /* Pods_whisperBotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E5D6D7C29E2E9E400AEAE2B /* Build configuration list for PBXNativeTarget "whisperBot" */;
 			buildPhases = (
+				6B30E719DD59391C535369A0 /* [CP] Check Pods Manifest.lock */,
 				4E5D6D5029E2E9E100AEAE2B /* Sources */,
 				4E5D6D5129E2E9E100AEAE2B /* Frameworks */,
 				4E5D6D5229E2E9E100AEAE2B /* Resources */,
+				BF84E91D9734136177127154 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E5D6D7F29E2E9E400AEAE2B /* Build configuration list for PBXNativeTarget "whisperBotTests" */;
 			buildPhases = (
+				5D037C25F85F005D084041E8 /* [CP] Check Pods Manifest.lock */,
 				4E5D6D6429E2E9E400AEAE2B /* Sources */,
 				4E5D6D6529E2E9E400AEAE2B /* Frameworks */,
 				4E5D6D6629E2E9E400AEAE2B /* Resources */,
@@ -166,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E5D6D8229E2E9E400AEAE2B /* Build configuration list for PBXNativeTarget "whisperBotUITests" */;
 			buildPhases = (
+				C95442671D2FB4D96769A073 /* [CP] Check Pods Manifest.lock */,
 				4E5D6D6E29E2E9E400AEAE2B /* Sources */,
 				4E5D6D6F29E2E9E400AEAE2B /* Frameworks */,
 				4E5D6D7029E2E9E400AEAE2B /* Resources */,
+				39C539838D409B517EE9D02A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +294,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C539838D409B517EE9D02A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whisperBot-whisperBotUITests/Pods-whisperBot-whisperBotUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whisperBot-whisperBotUITests/Pods-whisperBot-whisperBotUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whisperBot-whisperBotUITests/Pods-whisperBot-whisperBotUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D037C25F85F005D084041E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whisperBotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B30E719DD59391C535369A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whisperBot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF84E91D9734136177127154 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whisperBot/Pods-whisperBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whisperBot/Pods-whisperBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whisperBot/Pods-whisperBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95442671D2FB4D96769A073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whisperBot-whisperBotUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E5D6D5029E2E9E100AEAE2B /* Sources */ = {
@@ -419,6 +568,7 @@
 		};
 		4E5D6D7D29E2E9E400AEAE2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 771EBE7597898210617065FF /* Pods-whisperBot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,6 +596,7 @@
 		};
 		4E5D6D7E29E2E9E400AEAE2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9746F003A429CF3BF3DC3628 /* Pods-whisperBot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +624,7 @@
 		};
 		4E5D6D8029E2E9E400AEAE2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7C2CE61BC0346AFEA576E7 /* Pods-whisperBotTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +644,7 @@
 		};
 		4E5D6D8129E2E9E400AEAE2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D34DC70C291AD3F123B90693 /* Pods-whisperBotTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +664,7 @@
 		};
 		4E5D6D8329E2E9E400AEAE2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339EACD290B9BA50AFF8AE73 /* Pods-whisperBot-whisperBotUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +682,7 @@
 		};
 		4E5D6D8429E2E9E400AEAE2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A5A11D14564E6D74C511C8 /* Pods-whisperBot-whisperBotUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
