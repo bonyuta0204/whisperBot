@@ -5,11 +5,10 @@
 //  Created by Yuta Nakamura on 2023/04/09.
 //
 
-import XCTest
 @testable import whisperBot
+import XCTest
 
 final class whisperBotTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -28,9 +27,8 @@ final class whisperBotTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

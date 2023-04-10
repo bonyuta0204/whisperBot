@@ -6,49 +6,41 @@
 //
 
 import Foundation
+import RxSwift
 
-func sendChatGPTRequest(prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
-    print("sendChatGPTRequest")
-    let url = URL(string: "https://api.openai.com/v1/engines/davinci-codex/completions")!
-    var request = URLRequest(url: url)
-    request.httpMethod = "POST"
-    request.addValue("Bearer " + "API_KEY", forHTTPHeaderField: "Authorization")
-    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+struct ChatGPTRequest: APIRequest {
+    private let apiKey = "your_api_key_here"
 
-    let requestBody: [String: Any] = [
-        "prompt": prompt,
-        "max_tokens": 50,
-        "n": 1,
-        "stop": ["\n"],
-        "temperature": 0.8
-    ]
-
-    request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody, options: [])
-
-    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-        if let error = error {
-            completion(.failure(error))
-            return
+    typealias Response = ChatCompletion
+    let text: String
+    var urlRequest: URLRequest {
+        guard let url = URL(string: "https://api.openai.com/v1/engines/davinci-codex/completions") else {
+            fatalError("Invalid URL")
         }
 
-        guard let data = data else {
-            completion(.failure(NSError(domain: "", code: -1, userInfo: nil)))
-            return
-        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        do {
-            let jsonObject = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-            guard let choices = jsonObject?["choices"] as? [[String: Any]],
-                  let firstChoice = choices.first,
-                  let text = firstChoice["text"] as? String else {
-                completion(.failure(NSError(domain: "", code: -1, userInfo: nil)))
-                return
-            }
-            completion(.success(text))
-        } catch {
-            completion(.failure(error))
-        }
+        let prompt = "You: \(text)\nAI:"
+        let json: [String: Any] = [
+            "prompt": prompt,
+            "max_tokens": 50,
+            "n": 1,
+            "stop": ["\n"],
+        ]
+
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        request.httpBody = jsonData
+
+        return request
     }
+}
 
-    task.resume()
+class ChatGPTAPI {
+    func sendTextToChatGPT(text: String) -> Observable<ChatCompletion> {
+        var client = APIClient()
+        return client.send(ChatGPTRequest(text: text))
+    }
 }

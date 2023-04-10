@@ -19,6 +19,10 @@
 		4E5D6D8829E2FBC800AEAE2B /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D6D8729E2FBC800AEAE2B /* ChatGPTAPI.swift */; };
 		4E5D6D8A29E2FBE300AEAE2B /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D6D8929E2FBE300AEAE2B /* TextToSpeech.swift */; };
 		4EB3A9CC29E30E950002CBC7 /* WhisperBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3A9CB29E30E950002CBC7 /* WhisperBotViewController.swift */; };
+		4EB3A9CF29E3212A0002CBC7 /* ChatCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3A9CE29E3212A0002CBC7 /* ChatCompletion.swift */; };
+		4EB3A9D229E321C90002CBC7 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3A9D129E321C90002CBC7 /* APIRequest.swift */; };
+		4EB3A9D429E321E10002CBC7 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3A9D329E321E10002CBC7 /* APIClient.swift */; };
+		4EB3A9D629E464D30002CBC7 /* WhisperBotWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3A9D529E464D30002CBC7 /* WhisperBotWindowController.swift */; };
 		52303DE4F29DB936AA06CB87 /* Pods_whisperBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01856B9409ACE987932CF390 /* Pods_whisperBotTests.framework */; };
 		9D97097474D691F292B1FFCB /* Pods_whisperBot_whisperBotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FA7E8F9661835B2462073B /* Pods_whisperBot_whisperBotUITests.framework */; };
 		BB3ECB48EF3CEE87EAADFE9E /* Pods_whisperBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0315A384FCEC1DF39A8F01A /* Pods_whisperBot.framework */; };
@@ -61,6 +65,10 @@
 		4E5D6D8729E2FBC800AEAE2B /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
 		4E5D6D8929E2FBE300AEAE2B /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
 		4EB3A9CB29E30E950002CBC7 /* WhisperBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperBotViewController.swift; sourceTree = "<group>"; };
+		4EB3A9CE29E3212A0002CBC7 /* ChatCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCompletion.swift; sourceTree = "<group>"; };
+		4EB3A9D129E321C90002CBC7 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		4EB3A9D329E321E10002CBC7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4EB3A9D529E464D30002CBC7 /* WhisperBotWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperBotWindowController.swift; sourceTree = "<group>"; };
 		61FA7E8F9661835B2462073B /* Pods_whisperBot_whisperBotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whisperBot_whisperBotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A5A11D14564E6D74C511C8 /* Pods-whisperBot-whisperBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBot-whisperBotUITests.release.xcconfig"; path = "Target Support Files/Pods-whisperBot-whisperBotUITests/Pods-whisperBot-whisperBotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		771EBE7597898210617065FF /* Pods-whisperBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whisperBot.debug.xcconfig"; path = "Target Support Files/Pods-whisperBot/Pods-whisperBot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 		4E5D6D5629E2E9E100AEAE2B /* whisperBot */ = {
 			isa = PBXGroup;
 			children = (
+				4EB3A9D029E321B60002CBC7 /* Utils */,
+				4EB3A9CD29E320DB0002CBC7 /* Model */,
 				4E5D6D5729E2E9E100AEAE2B /* AppDelegate.swift */,
 				4E5D6D5929E2E9E100AEAE2B /* ViewController.swift */,
 				4E5D6D5E29E2E9E400AEAE2B /* Assets.xcassets */,
@@ -132,6 +142,7 @@
 				4E5D6D8729E2FBC800AEAE2B /* ChatGPTAPI.swift */,
 				4E5D6D8929E2FBE300AEAE2B /* TextToSpeech.swift */,
 				4EB3A9CB29E30E950002CBC7 /* WhisperBotViewController.swift */,
+				4EB3A9D529E464D30002CBC7 /* WhisperBotWindowController.swift */,
 			);
 			path = whisperBot;
 			sourceTree = "<group>";
@@ -151,6 +162,23 @@
 				4E5D6D7829E2E9E400AEAE2B /* whisperBotUITestsLaunchTests.swift */,
 			);
 			path = whisperBotUITests;
+			sourceTree = "<group>";
+		};
+		4EB3A9CD29E320DB0002CBC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EB3A9CE29E3212A0002CBC7 /* ChatCompletion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EB3A9D029E321B60002CBC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EB3A9D129E321C90002CBC7 /* APIRequest.swift */,
+				4EB3A9D329E321E10002CBC7 /* APIClient.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D0CD29EBF3A4134F380F57E2 /* Pods */ = {
@@ -415,11 +443,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5D6D5A29E2E9E100AEAE2B /* ViewController.swift in Sources */,
+				4EB3A9D629E464D30002CBC7 /* WhisperBotWindowController.swift in Sources */,
+				4EB3A9CF29E3212A0002CBC7 /* ChatCompletion.swift in Sources */,
 				4E5D6D8A29E2FBE300AEAE2B /* TextToSpeech.swift in Sources */,
+				4EB3A9D429E321E10002CBC7 /* APIClient.swift in Sources */,
 				4E5D6D5D29E2E9E100AEAE2B /* whisperBot.xcdatamodeld in Sources */,
 				4E5D6D5829E2E9E100AEAE2B /* AppDelegate.swift in Sources */,
 				4E5D6D8629E2FB6D00AEAE2B /* WhisperAPI.swift in Sources */,
 				4E5D6D8829E2FBC800AEAE2B /* ChatGPTAPI.swift in Sources */,
+				4EB3A9D229E321C90002CBC7 /* APIRequest.swift in Sources */,
 				4EB3A9CC29E30E950002CBC7 /* WhisperBotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

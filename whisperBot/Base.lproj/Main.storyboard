@@ -679,20 +679,84 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="18" y="-150"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="TRR-97-uSQ">
+            <objects>
+                <windowController storyboardIdentifier="WhisperBotWindowController" id="CMf-cl-UZH" customClass="WhisperBotWindowController" customModule="whisperBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="fUg-WP-WpF">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="239" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+                        <view key="contentView" id="6km-YJ-qvd">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="CMf-cl-UZH" id="34G-Ts-y6g"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="P5K-ZR-CCd"/>
+                    </connections>
+                </windowController>
+                <customObject id="mD4-Ce-zcS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-656" y="426"/>
         </scene>
         <!--Whisper Bot View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController storyboardIdentifier="WhisperBotViewController" id="XfG-lQ-9wD" customClass="WhisperBotViewController" customModule="whisperBot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
+                    <customView key="view" identifier="ContentView" id="81r-qJ-aIR">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="850"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <subviews>
+                            <visualEffectView ambiguous="YES" blendingMode="behindWindow" material="light" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-ZI-6G5">
+                                <rect key="frame" x="10" y="709" width="350" height="128"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8a-6D-SNH">
+                                        <rect key="frame" x="18" y="99" width="66" height="16"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Your Input" id="IOg-ML-sCK">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField wantsLayer="YES" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HRS-jD-jbj">
+                                        <rect key="frame" x="20" y="63" width="320" height="21"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="HbL-N3-Xep">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HRS-jD-jbj" firstAttribute="top" secondItem="q8a-6D-SNH" secondAttribute="bottom" constant="20" id="7M3-9F-DXo"/>
+                                    <constraint firstItem="q8a-6D-SNH" firstAttribute="leading" secondItem="Ad8-ZI-6G5" secondAttribute="leading" constant="20" id="bkh-lZ-FbP"/>
+                                    <constraint firstItem="HRS-jD-jbj" firstAttribute="leading" secondItem="Ad8-ZI-6G5" secondAttribute="leading" constant="20" symbolic="YES" id="msM-Kh-SyF"/>
+                                    <constraint firstItem="q8a-6D-SNH" firstAttribute="top" secondItem="Ad8-ZI-6G5" secondAttribute="top" constant="10" id="okM-QB-Shg"/>
+                                    <constraint firstAttribute="trailing" secondItem="HRS-jD-jbj" secondAttribute="trailing" constant="10" id="sjZ-eR-j6k"/>
+                                </constraints>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ad8-ZI-6G5" firstAttribute="leading" secondItem="81r-qJ-aIR" secondAttribute="leading" constant="10" id="3oQ-YU-EXH"/>
+                            <constraint firstItem="Ad8-ZI-6G5" firstAttribute="top" secondItem="81r-qJ-aIR" secondAttribute="top" constant="10" id="6X1-ZY-skO"/>
+                            <constraint firstAttribute="trailing" secondItem="Ad8-ZI-6G5" secondAttribute="trailing" constant="10" id="Ptc-6F-5Ml"/>
+                            <constraint firstItem="Ad8-ZI-6G5" firstAttribute="top" secondItem="81r-qJ-aIR" secondAttribute="top" constant="10" id="dCz-AS-ztI"/>
+                        </constraints>
+                    </customView>
+                    <connections>
+                        <outlet property="textField" destination="HRS-jD-jbj" id="KeV-XL-2oL"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-40" y="420"/>
         </scene>
     </scenes>
 </document>
