@@ -26,7 +26,7 @@ class WhisperBotWindowController: NSWindowController {
         print("window isVisible: \(window.isVisible)") // Add this line
         NSAnimationContext.runAnimationGroup({ context in
             print("animation block called") // Add this line
-            context.duration = 0.5
+            context.duration = 2
             context.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
             window.animator().setFrame(NSRect(x: screenRect.width - windowWidth, y: screenRect.height / 2 - windowHeight / 2, width: windowWidth, height: windowHeight), display: true)
         }, completionHandler: nil)
