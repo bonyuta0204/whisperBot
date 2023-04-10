@@ -21,7 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(showWindow(_:))
         }
 
-        whisperBotWindowController = WhisperBotViewController.freshController()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        whisperBotWindowController = storyboard.instantiateController(withIdentifier: "WhisperBotWindowController") as? WhisperBotWindowController
+
 
         let options = [kAXTrustedCheckOptionPrompt.takeRetainedValue(): true] as CFDictionary
         let isTrusted = options
@@ -35,6 +37,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.showWindow(nil)
             }
         })
+        
+        constructMenu()
     }
 
     func applicationWillTerminate(_: Notification) {

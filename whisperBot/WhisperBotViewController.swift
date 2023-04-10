@@ -11,7 +11,7 @@ import RxSwift
 
 class WhisperBotViewController: NSViewController {
     @IBOutlet var textField: NSTextField!
-
+    
     let disposeBag = DisposeBag()
 
     let chatGPT = ChatGPTAPI()

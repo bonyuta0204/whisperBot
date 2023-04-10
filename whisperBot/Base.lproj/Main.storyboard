@@ -714,44 +714,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="370" height="850"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                         <subviews>
-                            <visualEffectView ambiguous="YES" blendingMode="behindWindow" material="light" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-ZI-6G5">
-                                <rect key="frame" x="10" y="709" width="350" height="128"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8a-6D-SNH">
-                                        <rect key="frame" x="18" y="99" width="66" height="16"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Your Input" id="IOg-ML-sCK">
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <textField wantsLayer="YES" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HRS-jD-jbj">
-                                        <rect key="frame" x="20" y="63" width="320" height="21"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="HbL-N3-Xep">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="HRS-jD-jbj" firstAttribute="top" secondItem="q8a-6D-SNH" secondAttribute="bottom" constant="20" id="7M3-9F-DXo"/>
-                                    <constraint firstItem="q8a-6D-SNH" firstAttribute="leading" secondItem="Ad8-ZI-6G5" secondAttribute="leading" constant="20" id="bkh-lZ-FbP"/>
-                                    <constraint firstItem="HRS-jD-jbj" firstAttribute="leading" secondItem="Ad8-ZI-6G5" secondAttribute="leading" constant="20" symbolic="YES" id="msM-Kh-SyF"/>
-                                    <constraint firstItem="q8a-6D-SNH" firstAttribute="top" secondItem="Ad8-ZI-6G5" secondAttribute="top" constant="10" id="okM-QB-Shg"/>
-                                    <constraint firstAttribute="trailing" secondItem="HRS-jD-jbj" secondAttribute="trailing" constant="10" id="sjZ-eR-j6k"/>
-                                </constraints>
-                            </visualEffectView>
+                            <box boxType="custom" borderType="line" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Dfr-vW-Wav">
+                                <rect key="frame" x="10" y="20" width="350" height="810"/>
+                                <view key="contentView" id="AhT-lj-P9G">
+                                    <rect key="frame" x="1" y="1" width="348" height="808"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pMe-gx-gKF">
+                                            <rect key="frame" x="16" y="772" width="314" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Your Input" id="Z9Y-dr-htU">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reM-LH-gb7">
+                                            <rect key="frame" x="18" y="731" width="310" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="kva-wM-tKL">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                                <color key="fillColor" name="systemCyanColor" catalog="System" colorSpace="catalog"/>
+                            </box>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Ad8-ZI-6G5" firstAttribute="leading" secondItem="81r-qJ-aIR" secondAttribute="leading" constant="10" id="3oQ-YU-EXH"/>
-                            <constraint firstItem="Ad8-ZI-6G5" firstAttribute="top" secondItem="81r-qJ-aIR" secondAttribute="top" constant="10" id="6X1-ZY-skO"/>
-                            <constraint firstAttribute="trailing" secondItem="Ad8-ZI-6G5" secondAttribute="trailing" constant="10" id="Ptc-6F-5Ml"/>
-                            <constraint firstItem="Ad8-ZI-6G5" firstAttribute="top" secondItem="81r-qJ-aIR" secondAttribute="top" constant="10" id="dCz-AS-ztI"/>
+                            <constraint firstAttribute="trailing" secondItem="Dfr-vW-Wav" secondAttribute="trailing" constant="10" id="Iap-vN-7kq"/>
+                            <constraint firstAttribute="bottom" secondItem="Dfr-vW-Wav" secondAttribute="bottom" constant="20" symbolic="YES" id="Lov-Fp-YEp"/>
+                            <constraint firstItem="Dfr-vW-Wav" firstAttribute="leading" secondItem="81r-qJ-aIR" secondAttribute="leading" constant="10" id="SMC-Wn-Rx5"/>
+                            <constraint firstItem="Dfr-vW-Wav" firstAttribute="top" secondItem="81r-qJ-aIR" secondAttribute="top" constant="20" id="dLw-3i-RNF"/>
+                            <constraint firstItem="Dfr-vW-Wav" firstAttribute="top" secondItem="81r-qJ-aIR" secondAttribute="top" constant="20" symbolic="YES" id="nO0-gi-9f0"/>
                         </constraints>
                     </customView>
                     <connections>
-                        <outlet property="textField" destination="HRS-jD-jbj" id="KeV-XL-2oL"/>
+                        <outlet property="textField" destination="reM-LH-gb7" id="QP1-w7-F32"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
