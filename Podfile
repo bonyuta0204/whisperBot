@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :osx, '12.4'
 
 target 'whisperBot' do
   # Comment the next line if you don't want to use dynamic frameworks
